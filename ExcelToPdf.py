@@ -2,19 +2,11 @@ import pandas as pd
 import os
 import zipfile
 import unicodedata
-import git
-from datetime import datetime
 
 try:
     from fpdf import FPDF
 except ImportError:
     print("Error: Modul 'fpdf' tidak ditemukan. Silakan install dengan 'pip install fpdf'")
-    exit(1)
-
-try:
-    import git
-except ImportError:
-    print("Error: Modul 'gitpython' tidak ditemukan. Silakan install dengan 'pip install gitpython'")
     exit(1)
 
 # Path file Excel
